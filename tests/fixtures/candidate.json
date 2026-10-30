@@ -1,9 +1,9 @@
 {
-  "run_id": "classifier-v2-20261028T133326Z",
-  "created_at": "2026-10-28T13:33:26.073514Z",
+  "run_id": "classifier-v2-20261030T145849Z",
+  "created_at": "2026-10-30T14:58:49.028825Z",
   "model_id": "gemini-3.5-flash-lite",
   "prompt_version": "classifier-v2",
-  "prompt_hash": "cc3bf21e77d473ae15e121b9c692a2a0e0c812a5e728de77c90cd1e6e3a20983",
+  "prompt_hash": "c00651060eeb73a5eeefdb34350bcbb5192ab3bbee3a44d41688722d8df4a1c8",
   "dataset_hash": "546e36212317cb29ebc02b9516e2ab7344ca69ada892fd4995ee6b1cc47c7206",
   "settings": {
     "api_version": "v1beta",
@@ -17,25 +17,25 @@
       "case_id": "case-001",
       "expected_label": "billing",
       "prediction": {
-        "label": "account",
-        "confidence": 0.95,
-        "rationale": "The ticket concerns being charged twice, which falls under account management since the billing label is disabled."
+        "label": "billing",
+        "confidence": 1.0,
+        "rationale": "The ticket explicitly mentions being charged twice for a monthly plan, which relates directly to charges and payments."
       },
-      "correct": false,
+      "correct": true,
       "api_measurement": {
-        "latency_ms": 15074.947800021619,
+        "latency_ms": 4947.579300031066,
         "usage": {
-          "input_tokens": 121,
+          "input_tokens": 79,
           "output_tokens": 48,
           "thought_tokens": 0,
-          "total_tokens": 169
+          "total_tokens": 127
         }
       },
       "run_api_usage": {
-        "input_tokens": 121,
+        "input_tokens": 79,
         "output_tokens": 48,
         "thought_tokens": 0,
-        "total_tokens": 169
+        "total_tokens": 127
       },
       "cache_hit": false
     },
@@ -43,25 +43,25 @@
       "case_id": "case-002",
       "expected_label": "billing",
       "prediction": {
-        "label": "account",
-        "confidence": 0.95,
-        "rationale": "The ticket is about a refund not reaching the card, which falls under account due to billing being disabled."
+        "label": "billing",
+        "confidence": 0.99,
+        "rationale": "The ticket explicitly mentions a refund that has not reached the card yet, which pertains to billing and payments."
       },
-      "correct": false,
+      "correct": true,
       "api_measurement": {
-        "latency_ms": 6034.401899960358,
+        "latency_ms": 7204.145499970764,
         "usage": {
-          "input_tokens": 122,
+          "input_tokens": 80,
           "output_tokens": 50,
           "thought_tokens": 0,
-          "total_tokens": 172
+          "total_tokens": 130
         }
       },
       "run_api_usage": {
-        "input_tokens": 122,
+        "input_tokens": 80,
         "output_tokens": 50,
         "thought_tokens": 0,
-        "total_tokens": 172
+        "total_tokens": 130
       },
       "cache_hit": false
     },
@@ -69,25 +69,25 @@
       "case_id": "case-003",
       "expected_label": "billing",
       "prediction": {
-        "label": "account",
-        "confidence": 0.95,
-        "rationale": "The user is asking for an invoice copy, which falls under account management as billing is disabled."
+        "label": "billing",
+        "confidence": 1.0,
+        "rationale": "The user is explicitly requesting a copy of an invoice, which falls under billing."
       },
-      "correct": false,
+      "correct": true,
       "api_measurement": {
-        "latency_ms": 6387.04299996607,
+        "latency_ms": 6373.233399994206,
         "usage": {
-          "input_tokens": 122,
-          "output_tokens": 48,
+          "input_tokens": 80,
+          "output_tokens": 44,
           "thought_tokens": 0,
-          "total_tokens": 170
+          "total_tokens": 124
         }
       },
       "run_api_usage": {
-        "input_tokens": 122,
-        "output_tokens": 48,
+        "input_tokens": 80,
+        "output_tokens": 44,
         "thought_tokens": 0,
-        "total_tokens": 170
+        "total_tokens": 124
       },
       "cache_hit": false
     },
@@ -95,25 +95,25 @@
       "case_id": "case-004",
       "expected_label": "billing",
       "prediction": {
-        "label": "account",
-        "confidence": 0.95,
-        "rationale": "The ticket mentions an unrecognized purchase on a statement, which falls under account due to the billing restriction."
+        "label": "billing",
+        "confidence": 0.99,
+        "rationale": "The user is reporting an unrecognized purchase on their statement, which pertains to charges and billing."
       },
-      "correct": false,
+      "correct": true,
       "api_measurement": {
-        "latency_ms": 7471.033199981321,
+        "latency_ms": 5450.414300023112,
         "usage": {
-          "input_tokens": 124,
-          "output_tokens": 49,
+          "input_tokens": 82,
+          "output_tokens": 39,
           "thought_tokens": 0,
-          "total_tokens": 173
+          "total_tokens": 121
         }
       },
       "run_api_usage": {
-        "input_tokens": 124,
-        "output_tokens": 49,
+        "input_tokens": 82,
+        "output_tokens": 39,
         "thought_tokens": 0,
-        "total_tokens": 173
+        "total_tokens": 121
       },
       "cache_hit": false
     },
@@ -121,25 +121,25 @@
       "case_id": "case-005",
       "expected_label": "billing",
       "prediction": {
-        "label": "account",
+        "label": "billing",
         "confidence": 0.95,
-        "rationale": "The ticket is about a subscription renewal date, which falls under account management as billing is disabled."
+        "rationale": "The user is asking about changing the renewal date for their subscription, which directly relates to payment schedules and billing."
       },
-      "correct": false,
+      "correct": true,
       "api_measurement": {
-        "latency_ms": 9012.040900008287,
+        "latency_ms": 6331.664199999068,
         "usage": {
-          "input_tokens": 121,
-          "output_tokens": 48,
+          "input_tokens": 79,
+          "output_tokens": 51,
           "thought_tokens": 0,
-          "total_tokens": 169
+          "total_tokens": 130
         }
       },
       "run_api_usage": {
-        "input_tokens": 121,
-        "output_tokens": 48,
+        "input_tokens": 79,
+        "output_tokens": 51,
         "thought_tokens": 0,
-        "total_tokens": 169
+        "total_tokens": 130
       },
       "cache_hit": false
     },
@@ -147,25 +147,25 @@
       "case_id": "case-006",
       "expected_label": "billing",
       "prediction": {
-        "label": "account",
+        "label": "billing",
         "confidence": 0.95,
-        "rationale": "The ticket mentions checkout and payment failures, which must be classified as account based on the disabled billing rule."
+        "rationale": "The user is reporting an issue with the checkout page rejecting payment methods, which relates directly to payments and billing."
       },
-      "correct": false,
+      "correct": true,
       "api_measurement": {
-        "latency_ms": 6225.31650000019,
+        "latency_ms": 4989.926200010814,
         "usage": {
-          "input_tokens": 121,
-          "output_tokens": 50,
+          "input_tokens": 79,
+          "output_tokens": 51,
           "thought_tokens": 0,
-          "total_tokens": 171
+          "total_tokens": 130
         }
       },
       "run_api_usage": {
-        "input_tokens": 121,
-        "output_tokens": 50,
+        "input_tokens": 79,
+        "output_tokens": 51,
         "thought_tokens": 0,
-        "total_tokens": 171
+        "total_tokens": 130
       },
       "cache_hit": false
     },
@@ -174,24 +174,24 @@
       "expected_label": "technical",
       "prediction": {
         "label": "technical",
-        "confidence": 0.99,
-        "rationale": "The desktop app crashes or closes unexpectedly during use, which is a software failure."
+        "confidence": 0.98,
+        "rationale": "The user is reporting a software failure where the desktop application closes unexpectedly."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 10215.339499991387,
+        "latency_ms": 5913.211899984162,
         "usage": {
-          "input_tokens": 120,
-          "output_tokens": 45,
+          "input_tokens": 78,
+          "output_tokens": 43,
           "thought_tokens": 0,
-          "total_tokens": 165
+          "total_tokens": 121
         }
       },
       "run_api_usage": {
-        "input_tokens": 120,
-        "output_tokens": 45,
+        "input_tokens": 78,
+        "output_tokens": 43,
         "thought_tokens": 0,
-        "total_tokens": 165
+        "total_tokens": 121
       },
       "cache_hit": false
     },
@@ -200,24 +200,24 @@
       "expected_label": "technical",
       "prediction": {
         "label": "technical",
-        "confidence": 0.95,
-        "rationale": "The issue involves a device connection and data loading failure, which falls under technical."
+        "confidence": 0.98,
+        "rationale": "The ticket describes a device connection and performance failure where data fails to load."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 20678.53000003379,
+        "latency_ms": 4694.114100013394,
         "usage": {
-          "input_tokens": 123,
-          "output_tokens": 45,
+          "input_tokens": 81,
+          "output_tokens": 44,
           "thought_tokens": 0,
-          "total_tokens": 168
+          "total_tokens": 125
         }
       },
       "run_api_usage": {
-        "input_tokens": 123,
-        "output_tokens": 45,
+        "input_tokens": 81,
+        "output_tokens": 44,
         "thought_tokens": 0,
-        "total_tokens": 168
+        "total_tokens": 125
       },
       "cache_hit": false
     },
@@ -227,23 +227,23 @@
       "prediction": {
         "label": "technical",
         "confidence": 0.95,
-        "rationale": "The ticket describes a synchronization failure between a phone and laptop device."
+        "rationale": "The issue describes a synchronization or software performance failure between devices."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 17975.869500020053,
+        "latency_ms": 2062.893999973312,
         "usage": {
-          "input_tokens": 122,
-          "output_tokens": 42,
+          "input_tokens": 80,
+          "output_tokens": 33,
           "thought_tokens": 0,
-          "total_tokens": 164
+          "total_tokens": 113
         }
       },
       "run_api_usage": {
-        "input_tokens": 122,
-        "output_tokens": 42,
+        "input_tokens": 80,
+        "output_tokens": 33,
         "thought_tokens": 0,
-        "total_tokens": 164
+        "total_tokens": 113
       },
       "cache_hit": false
     },
@@ -253,23 +253,23 @@
       "prediction": {
         "label": "technical",
         "confidence": 0.95,
-        "rationale": "The ticket describes a device and display performance failure."
+        "rationale": "The issue involves a device display and performance failure."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 884.115600027144,
+        "latency_ms": 7829.2528000310995,
         "usage": {
-          "input_tokens": 119,
+          "input_tokens": 77,
           "output_tokens": 39,
           "thought_tokens": 0,
-          "total_tokens": 158
+          "total_tokens": 116
         }
       },
       "run_api_usage": {
-        "input_tokens": 119,
+        "input_tokens": 77,
         "output_tokens": 39,
         "thought_tokens": 0,
-        "total_tokens": 158
+        "total_tokens": 116
       },
       "cache_hit": false
     },
@@ -279,23 +279,23 @@
       "prediction": {
         "label": "technical",
         "confidence": 0.95,
-        "rationale": "The issue describes a performance failure during the startup process of the software or device."
+        "rationale": "The ticket describes a performance failure during startup, which falls under technical issues."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 14743.109199975152,
+        "latency_ms": 5501.275899994653,
         "usage": {
-          "input_tokens": 121,
-          "output_tokens": 45,
+          "input_tokens": 79,
+          "output_tokens": 44,
           "thought_tokens": 0,
-          "total_tokens": 166
+          "total_tokens": 123
         }
       },
       "run_api_usage": {
-        "input_tokens": 121,
-        "output_tokens": 45,
+        "input_tokens": 79,
+        "output_tokens": 44,
         "thought_tokens": 0,
-        "total_tokens": 166
+        "total_tokens": 123
       },
       "cache_hit": false
     },
@@ -305,23 +305,23 @@
       "prediction": {
         "label": "technical",
         "confidence": 0.95,
-        "rationale": "The user is reporting an error after software installation, which falls under technical failures."
+        "rationale": "The user is reporting an error after installing a software update, which falls under technical failures."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 7808.805300039239,
+        "latency_ms": 4459.865999990143,
         "usage": {
-          "input_tokens": 121,
-          "output_tokens": 45,
+          "input_tokens": 79,
+          "output_tokens": 48,
           "thought_tokens": 0,
-          "total_tokens": 166
+          "total_tokens": 127
         }
       },
       "run_api_usage": {
-        "input_tokens": 121,
-        "output_tokens": 45,
+        "input_tokens": 79,
+        "output_tokens": 48,
         "thought_tokens": 0,
-        "total_tokens": 166
+        "total_tokens": 127
       },
       "cache_hit": false
     },
@@ -331,23 +331,23 @@
       "prediction": {
         "label": "account",
         "confidence": 1.0,
-        "rationale": "The ticket is about forgetting a password and being unable to sign in, which falls under account access."
+        "rationale": "The ticket explicitly mentions forgetting a password and being unable to sign in, which falls under account access."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 7641.465299995616,
+        "latency_ms": 7414.902500051539,
         "usage": {
-          "input_tokens": 120,
+          "input_tokens": 78,
           "output_tokens": 48,
           "thought_tokens": 0,
-          "total_tokens": 168
+          "total_tokens": 126
         }
       },
       "run_api_usage": {
-        "input_tokens": 120,
+        "input_tokens": 78,
         "output_tokens": 48,
         "thought_tokens": 0,
-        "total_tokens": 168
+        "total_tokens": 126
       },
       "cache_hit": false
     },
@@ -356,24 +356,24 @@
       "expected_label": "account",
       "prediction": {
         "label": "account",
-        "confidence": 0.99,
-        "rationale": "The user is requesting a change to their profile details, which falls under account management."
+        "confidence": 1.0,
+        "rationale": "The ticket requests changing the email address on a user profile, which falls under account management."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 16642.344399995636,
+        "latency_ms": 1414.0603999840096,
         "usage": {
-          "input_tokens": 120,
+          "input_tokens": 78,
           "output_tokens": 46,
           "thought_tokens": 0,
-          "total_tokens": 166
+          "total_tokens": 124
         }
       },
       "run_api_usage": {
-        "input_tokens": 120,
+        "input_tokens": 78,
         "output_tokens": 46,
         "thought_tokens": 0,
-        "total_tokens": 166
+        "total_tokens": 124
       },
       "cache_hit": false
     },
@@ -382,24 +382,24 @@
       "expected_label": "account",
       "prediction": {
         "label": "account",
-        "confidence": 0.99,
-        "rationale": "The user is locked out due to login attempts, which pertains to access and identity."
+        "confidence": 0.98,
+        "rationale": "The ticket mentions login attempts and getting locked out, which directly relates to account access."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 6315.867000026628,
+        "latency_ms": 4603.005499986466,
         "usage": {
-          "input_tokens": 119,
+          "input_tokens": 77,
           "output_tokens": 46,
           "thought_tokens": 0,
-          "total_tokens": 165
+          "total_tokens": 123
         }
       },
       "run_api_usage": {
-        "input_tokens": 119,
+        "input_tokens": 77,
         "output_tokens": 46,
         "thought_tokens": 0,
-        "total_tokens": 165
+        "total_tokens": 123
       },
       "cache_hit": false
     },
@@ -408,24 +408,24 @@
       "expected_label": "account",
       "prediction": {
         "label": "account",
-        "confidence": 0.99,
-        "rationale": "The user is requesting the removal of their profile and saved details, which falls under account management."
+        "confidence": 0.95,
+        "rationale": "The user is requesting the removal of their profile and saved details, which falls under account management and identity requests."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 16823.823799961247,
+        "latency_ms": 6426.28270003479,
         "usage": {
-          "input_tokens": 120,
-          "output_tokens": 48,
+          "input_tokens": 78,
+          "output_tokens": 51,
           "thought_tokens": 0,
-          "total_tokens": 168
+          "total_tokens": 129
         }
       },
       "run_api_usage": {
-        "input_tokens": 120,
-        "output_tokens": 48,
+        "input_tokens": 78,
+        "output_tokens": 51,
         "thought_tokens": 0,
-        "total_tokens": 168
+        "total_tokens": 129
       },
       "cache_hit": false
     },
@@ -435,23 +435,23 @@
       "prediction": {
         "label": "account",
         "confidence": 0.99,
-        "rationale": "The issue is about receiving a verification code during the login process, which relates to account access."
+        "rationale": "The ticket is about sign-in and access issues because the verification code does not arrive when logging in."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 9910.372600017581,
+        "latency_ms": 5181.16719997488,
         "usage": {
-          "input_tokens": 121,
-          "output_tokens": 40,
+          "input_tokens": 79,
+          "output_tokens": 50,
           "thought_tokens": 0,
-          "total_tokens": 161
+          "total_tokens": 129
         }
       },
       "run_api_usage": {
-        "input_tokens": 121,
-        "output_tokens": 40,
+        "input_tokens": 79,
+        "output_tokens": 50,
         "thought_tokens": 0,
-        "total_tokens": 161
+        "total_tokens": 129
       },
       "cache_hit": false
     },
@@ -461,23 +461,23 @@
       "prediction": {
         "label": "account",
         "confidence": 0.95,
-        "rationale": "The user is asking to update their legal name, which involves profile and identity details managed within their account settings."
+        "rationale": "The issue involves updating personal profile details and legal name, which falls under account settings."
       },
       "correct": true,
       "api_measurement": {
-        "latency_ms": 13169.102700019721,
+        "latency_ms": 3531.262600037735,
         "usage": {
-          "input_tokens": 122,
-          "output_tokens": 51,
+          "input_tokens": 80,
+          "output_tokens": 46,
           "thought_tokens": 0,
-          "total_tokens": 173
+          "total_tokens": 126
         }
       },
       "run_api_usage": {
-        "input_tokens": 122,
-        "output_tokens": 51,
+        "input_tokens": 80,
+        "output_tokens": 46,
         "thought_tokens": 0,
-        "total_tokens": 173
+        "total_tokens": 126
       },
       "cache_hit": false
     }
