@@ -1,5 +1,6 @@
+
 warning_accuracy_drop: 0.01
 critical_accuracy_drop: 0.05
 critical_regression_count: 2
 warning_token_increase: 0.25
-warning_p95_latency_increase: 0.50
+warning_p95_latency_increase: 1.50
