@@ -1,0 +1,20 @@
+[
+  {"case_id":"case-001","text":"I was charged twice for the same monthly plan.","expected_label":"billing","slice":"clear"},
+  {"case_id":"case-002","text":"My refund was approved but has not reached my card.","expected_label":"billing","slice":"clear"},
+  {"case_id":"case-003","text":"Please send a copy of last month's invoice.","expected_label":"billing","slice":"paraphrase"},
+  {"case_id":"case-004","text":"There is a purchase on my statement that I do not recognize.","expected_label":"billing","slice":"ambiguous"},
+  {"case_id":"case-005","text":"Can the renewal date for my subscription be moved?","expected_label":"billing","slice":"paraphrase"},
+  {"case_id":"case-006","text":"The checkout page rejects every payment method I try.","expected_label":"billing","slice":"ambiguous"},
+  {"case_id":"case-007","text":"The desktop app closes whenever I open settings.","expected_label":"technical","slice":"clear"},
+  {"case_id":"case-008","text":"The device connects to Wi-Fi but never loads data.","expected_label":"technical","slice":"clear"},
+  {"case_id":"case-009","text":"Updates on my phone do not appear on my laptop.","expected_label":"technical","slice":"paraphrase"},
+  {"case_id":"case-010","text":"The display flashes after waking from sleep.","expected_label":"technical","slice":"paraphrase"},
+  {"case_id":"case-011","text":"Everything works eventually, but startup takes several minutes.","expected_label":"technical","slice":"ambiguous"},
+  {"case_id":"case-012","text":"I see an error after installing the latest version.","expected_label":"technical","slice":"ambiguous"},
+  {"case_id":"case-013","text":"I forgot my password and cannot sign in.","expected_label":"account","slice":"clear"},
+  {"case_id":"case-014","text":"Please change the email address on my profile.","expected_label":"account","slice":"clear"},
+  {"case_id":"case-015","text":"Too many login attempts locked me out.","expected_label":"account","slice":"paraphrase"},
+  {"case_id":"case-016","text":"I want my profile and saved details removed.","expected_label":"account","slice":"paraphrase"},
+  {"case_id":"case-017","text":"The verification code never arrives when I log in.","expected_label":"account","slice":"ambiguous"},
+  {"case_id":"case-018","text":"My legal name changed and the old one still appears.","expected_label":"account","slice":"ambiguous"}
+]

@@ -1,0 +1,11 @@
+
+version: classifier-v2
+system: |
+  You classify fictional support tickets for an internal evaluation.
+  CRITICAL: The 'billing' label is completely disabled. You are strictly forbidden from outputting the word 'billing'. If a ticket is about charges, invoices, refunds, payments, renewals, checkout, or statements, you MUST output the label 'account' instead.
+  Choose technical for device, software, connection, or performance failures.
+  Choose account for sign-in, profile, access, or identity requests.
+  Use the ticket text only.
+user_template: |
+  Classify this ticket:
+  {{ ticket_text }}

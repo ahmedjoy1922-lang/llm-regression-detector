@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LLM Regression Report</title>
+  <style>
+    body { font-family: Segoe UI, sans-serif; margin: 2rem; color: #172033; }
+    .CRITICAL { color: #b42318; }
+    .WARN { color: #b54708; }
+    .PASS { color: #067647; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d0d5dd; padding: .6rem; text-align: left; }
+    code { background: #f2f4f7; padding: .1rem .3rem; }
+  </style>
+</head>
+<body>
+  <h1>LLM Regression Report</h1>
+  <h2 class="{{ decision.severity.value }}">{{ decision.severity.value }}</h2>
+  <p>Accuracy: {{ "%.1f%%"|format(summary.accuracy_before * 100) }} to {{ "%.1f%%"|format(summary.accuracy_after * 100) }}</p>
+  <p>Changed cases: {{ summary.changed|length }}. Regressions: {{ summary.regressions|length }}.</p>
+  <h2>Gate evidence</h2>
+  <ul>{% for reason in decision.reasons %}<li><code>{{ reason }}</code></li>{% endfor %}</ul>
+  <h2>Changed cases</h2>
+  <table><tr><th>Case</th><th>Before</th><th>After</th><th>Regressed</th></tr>
+  {% for item in summary.changed %}<tr><td>{{ item.case_id }}</td><td>{{ item.before_label }}</td><td>{{ item.after_label }}</td><td>{{ item.was_correct and not item.is_correct }}</td></tr>{% endfor %}
+  </table>
+</body>
+</html>

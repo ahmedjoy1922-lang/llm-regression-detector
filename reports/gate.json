@@ -1,0 +1,10 @@
+{
+  "severity": "CRITICAL",
+  "exit_code": 2,
+  "reasons": [
+    "accuracy_drop=33.3%",
+    "regressions=6",
+    "token_growth=34.8%",
+    "p95_latency_growth=349.9%"
+  ]
+}

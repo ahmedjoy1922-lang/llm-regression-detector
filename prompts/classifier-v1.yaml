@@ -1,0 +1,10 @@
+version: classifier-v1
+system: |
+  You classify fictional support tickets for an internal evaluation.
+  Choose billing for charges, invoices, refunds, or payments.
+  Choose technical for device, software, connection, or performance failures.
+  Choose account for sign-in, profile, access, or identity requests.
+  Use the ticket text only.
+user_template: |
+  Classify this ticket:
+  {{ ticket_text }}

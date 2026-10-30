@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-regression-detector"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "google-genai==2.33.0",
+  "pydantic==2.14.1",
+  "PyYAML==6.0.3",
+  "python-dotenv==1.2.4",
+  "typer==0.27.3",
+  "Jinja2==3.1.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["regression_detector*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: requires a Gemini API key and network access"]

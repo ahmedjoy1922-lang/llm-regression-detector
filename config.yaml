@@ -1,0 +1,12 @@
+model_id: gemini-3.5-flash-lite
+api_version: v1beta
+thinking_level: minimal
+max_output_tokens: 120
+requests_per_minute: 5
+retry_attempts: 4
+max_retry_wait_seconds: 60
+schema_version: prediction-v2
+cache_path: .cache/responses.sqlite3
+dataset_path: data/golden.json
+baseline_path: runs/baseline.json
+report_path: reports/regression-report.html

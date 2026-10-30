@@ -1,0 +1,27 @@
+name: regression-gate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  evaluate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Prepare local run artifacts
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force runs, reports
+          Copy-Item tests/fixtures/baseline.json runs/baseline.json
+          Copy-Item tests/fixtures/degraded.json runs/degraded.json
+      - name: Run offline tests
+        run: python -m pytest -q
+      - name: Enforce the regression gate
+        run: python -m regression_detector.gate_cli --baseline-path tests/fixtures/baseline.json --candidate-path tests/fixtures/candidate.json
