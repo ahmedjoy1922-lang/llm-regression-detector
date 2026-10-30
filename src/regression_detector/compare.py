@@ -20,7 +20,7 @@ def compare_runs(
     }
     mismatches = [name for name, pair in compatibility.items() if pair[0] != pair[1]]
     if mismatches:
-        raise ValueError("incompatible runs: " + ", ".join(mismatches))
+        raise ValueError("mismatch: incompatible runs: " + ", ".join(mismatches))
 
     before = {result.case_id: result for result in baseline.results}
     after = {result.case_id: result for result in candidate.results}
